@@ -58,7 +58,7 @@ var shoppingList = [String]()
         
       present(ac, animated: true)
     }
-    
+    // this function allows sharing of the files but logacally it only shows the option but does nothing 
     @objc func shareTapped() {
         let list = shoppingList.joined(separator: "\n")
         let vc = UIActivityViewController(activityItems: [list], applicationActivities: [])
